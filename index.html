@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jefferson Santos | Optometria</title>
+<link rel="stylesheet" href="c.css">
+</head>
+<body>
+
+<header>
+  <img src="download.png" class="logo">
+  <nav>
+    <a href="#agenda">Agendamento</a>
+    <a href="#optometrista">Optometrista</a>
+    <a href="#contato">Contato</a>
+    <a href="admin.html">Administrador</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Jefferson Santos Optometrista</h1>
+  <p>Cuidado completo com sua visão, com precisão e atendimento humanizado</p>
+  <a href="#agenda" class="btn">Agendar consulta</a>
+</section>
+
+<!-- ===== OPTOMETRISTA (MANTIDO) ===== -->
+<section id="optometrista" class="section optometrista">
+  <div class="opt-card">
+
+    <div class="opt-foto">
+      <img src="Design sem nome (4).png" alt="Jefferson Raffael dos Santos">
+      <span class="selo">Optometrista</span>
+    </div>
+
+    <div class="opt-info">
+      <h2>Jefferson Raffael dos Santos</h2>
+      <h3>Optometrista</h3>
+
+      <p class="registro">CRBO: 00000</p>
+
+      <p class="descricao">
+        Profissional dedicado à saúde visual, com atendimento humanizado e foco
+        na qualidade de vida dos pacientes. Atua na realização de exames
+        optométricos completos, avaliação visual detalhada e prescrição de
+        lentes corretivas com precisão.
+      </p>
+
+      <h4>Especializações</h4>
+      <ul class="especialidades">
+        <li>👁 Exames Optométricos Completos</li>
+        <li>🕶 Prescrição de Lentes Oftálmicas</li>
+        <li>📋 Avaliação da Saúde Visual</li>
+        <li>👶 Optometria Infantil</li>
+        <li>👴 Optometria Geriátrica</li>
+      </ul>
+
+      <h4>Diferenciais</h4>
+      <ul class="diferenciais">
+        <li>✔ Atendimento personalizado</li>
+        <li>✔ Tecnologia moderna em exames</li>
+        <li>✔ Explicação clara dos resultados</li>
+        <li>✔ Conforto e confiança ao paciente</li>
+      </ul>
+
+      <a href="#agenda" class="btn">Agendar consulta</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section atendimentos" id="atendimentos">
+  <h2>Opções de Atendimento</h2>
+
+  <p class="atendimento-intro">
+    Temos algumas opções de atendimento e gostaríamos de saber qual delas é mais
+    propícia para você no momento. Se quiser, posso te explicar melhor cada uma
+    ou te ajudar a escolher a opção ideal para a sua necessidade.
+  </p>
+
+  <div class="cards-atendimento">
+
+    <div class="card-atendimento">
+      <h3>👁️ Consulta Optométrica Completa</h3>
+      <p>
+        Avaliação detalhada da sua visão e da saúde visual, incluindo testes de
+        acuidade visual, refração e pressão ocular (PIO). Ideal para quem sente
+        dificuldade para enxergar, dor de cabeça, cansaço visual ou precisa
+        atualizar o grau.
+      </p>
+      <ul>
+        <li>⏱️ Tempo: 30 a 40 minutos</li>
+        <li>💰 Valor promocional: <strong>de R$ 220,00 por R$ 149,00</strong></li>
+        <li>💳 Parcelamento: até 2x no cartão</li>
+      </ul>
+    </div>
+
+    <div class="card-atendimento">
+      <h3>👓 Adaptação de Lentes de Contato</h3>
+      <p>
+        Indicado para quem deseja começar a usar lentes de contato ou trocar o
+        tipo de lente. Inclui testes, escolha da lente ideal e orientações
+        completas sobre uso, higiene e adaptação.
+      </p>
+      <ul>
+        <li>⏱️ Tempo: 40 a 60 minutos</li>
+        <li>💰 Valor: <strong>R$ 190,00</strong></li>
+      </ul>
+    </div>
+
+    <div class="card-atendimento">
+      <h3>🧠 Avaliação de Disfunções Binoculares</h3>
+      <p>
+        Avaliação individualizada para identificar alterações na coordenação
+        entre os olhos, como estrabismos, dificuldades de foco e oscilações
+        visuais. Caso necessário, é elaborado um programa personalizado para
+        melhorar o conforto e o desempenho visual.
+      </p>
+      <ul>
+        <li>⏱️ Tempo: 60 a 120 minutos</li>
+        <li>💰 Valor: <strong>R$ 249,00</strong></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== AGENDA SIMPLES ===== -->
+<section class="section agenda" id="agenda">
+  <h2>Agende sua consulta</h2>
+
+  <form id="agendamento">
+    <input type="text" id="nome" placeholder="Nome completo" required>
+    <input type="tel" id="telefone" placeholder="WhatsApp" required>
+
+    <label>Tipo de Consulta</label>
+    <select id="hora" required>
+      <option value="">Selecione</option>
+      <option value="Consulta Optométrica Completa">Consulta Optométrica Completa</option>
+      <option value="Adaptação para lentes de contato">Adaptação para lentes de contato</option>
+      <option value="Avaliação de Disfunções Binoculares">Avaliação de Disfunções Binoculares</option>
+    </select>
+
+    <button type="submit">Confirmar no WhatsApp</button>
+    <script src="main.js"></script>
+  </form>
+</section>

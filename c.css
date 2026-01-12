@@ -1,0 +1,409 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== CORES ===== */
+:root {
+  --verde-escuro: #1f3d36;
+  --verde-medio: #2f5d50;
+  --dourado: #b89b5e;
+  --cinza-claro: #f4f6f5;
+  --texto: #1a1a1a;
+}
+
+/* ===== BODY ===== */
+body {
+  background: var(--cinza-claro);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: var(--verde-escuro);
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 42px;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--dourado);
+  left: 0;
+  bottom: -4px;
+  transition: .3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 48px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--verde-medio), var(--verde-escuro));
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 15px;
+  opacity: .9;
+  margin-bottom: 24px;
+}
+
+/* ===== BOTÃO PADRÃO ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--dourado);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.btn:active {
+  transform: scale(.96);
+}
+
+/* ===== SEÇÕES ===== */
+.section {
+  padding: 36px 20px;
+}
+
+/* ===== OPTOMETRISTA ===== */
+.opt-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.opt-foto {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.opt-foto img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--dourado);
+}
+
+.selo {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--verde-medio);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.opt-info h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.opt-info h3 {
+  font-size: 15px;
+  text-align: center;
+  color: var(--verde-medio);
+  margin-bottom: 6px;
+}
+
+.registro {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.descricao {
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+/* LISTAS */
+.especialidades,
+.diferenciais {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.especialidades li,
+.diferenciais li {
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== AGENDA ===== */
+.agenda h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background: #fff;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  max-width: 420px;
+  margin: auto;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+form input:focus,
+form select:focus {
+  border-color: var(--verde-medio);
+  outline: none;
+}
+
+/* BOTÃO WHATSAPP */
+form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: var(--verde-medio);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+
+form button:active {
+  transform: scale(.97);
+}
+/* ===== ATENDIMENTOS ===== */
+.atendimentos h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.atendimento-intro {
+  font-size: 15px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #444;
+}
+
+.cards-atendimento {
+  display: grid;
+  gap: 20px;
+}
+
+.card-atendimento {
+  background: #fff;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card-atendimento:active {
+  transform: scale(.98);
+}
+
+.card-atendimento h3 {
+  font-size: 17px;
+  color: var(--verde-medio);
+  margin-bottom: 10px;
+}
+
+.card-atendimento p {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.card-atendimento ul {
+  list-style: none;
+}
+
+.card-atendimento li {
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  .cards-atendimento {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* ===== DESKTOP ===== */
+@media (min-width: 900px) {
+  .opt-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .opt-foto {
+    flex: 1;
+  }
+
+  .opt-info {
+    flex: 2;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+/* ===== MOBILE FIRST (até 414px) ===== */
+@media (max-width: 414px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 36px 16px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  /* SEÇÕES */
+  .section {
+    padding: 28px 16px;
+  }
+
+  /* OPTOMETRISTA */
+  .opt-card {
+    padding: 18px;
+  }
+
+  .opt-foto img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .opt-info h2 {
+    font-size: 18px;
+  }
+
+  .opt-info h3 {
+    font-size: 14px;
+  }
+
+  .descricao,
+  .especialidades li,
+  .diferenciais li {
+    font-size: 13px;
+  }
+
+  /* ATENDIMENTOS */
+  .atendimento-intro {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .card-atendimento {
+    padding: 18px;
+  }
+
+  .card-atendimento h3 {
+    font-size: 16px;
+  }
+
+  .card-atendimento p,
+  .card-atendimento li {
+    font-size: 13px;
+  }
+
+  /* FORMULÁRIO */
+  form {
+    padding: 20px;
+  }
+
+  form input,
+  form select {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  form button {
+    font-size: 15px;
+    padding: 14px;
+  }
+}
+
