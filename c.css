@@ -124,6 +124,8 @@ nav a:hover::after {
   border: 4px solid var(--dourado);
 }
 
+
+
 .selo {
   position: absolute;
   bottom: 6px;
@@ -273,6 +275,64 @@ form button:active {
   padding: 6px 0;
   border-bottom: 1px solid #eee;
 }
+/* ===== GALERIA DO CONSULTÓRIO ===== */
+.galeria h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.galeria-intro {
+  text-align: center;
+  font-size: 15px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.galeria-fotos {
+  display: grid;
+  gap: 16px;
+}
+
+/* IMAGENS */
+.galeria-fotos img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: transform .3s ease;
+}
+
+.galeria-fotos img:hover {
+  transform: scale(1.03);
+}
+footer{
+  background-color: #1f3d36;
+  color:#fff;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: gold;
+}
+/* TABLET */
+@media (min-width: 600px) {
+  .galeria-fotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  .galeria-fotos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .galeria-fotos img {
+    height: 260px;
+  }
+}
+
 
 /* DESKTOP */
 @media (min-width: 900px) {
@@ -291,6 +351,10 @@ form button:active {
   }
 
   .opt-foto {
+    flex: 1;
+  }
+
+  .loja{
     flex: 1;
   }
 
@@ -356,6 +420,10 @@ form button:active {
     width: 120px;
     height: 120px;
   }
+  .loja{
+    width: 120px;
+    height: 120px;
+  }
 
   .opt-info h2 {
     font-size: 18px;
@@ -406,4 +474,5 @@ form button:active {
     padding: 14px;
   }
 }
+
 
